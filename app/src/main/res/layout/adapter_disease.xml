@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="20dp"
+    android:layout_marginTop="20dp"
+    app:cardElevation="12dp"
+    app:cardBackgroundColor="@android:color/white"
+    app:cardCornerRadius="8dp">
+
+    <LinearLayout
+        android:id="@+id/container_disease"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/image_disease"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_image"
+            android:layout_marginEnd="8dp"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Disease Name"
+                android:fontFamily="@font/baloo_bhai_medium"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:singleLine="true"/>
+
+            <TextView
+                android:id="@+id/text_about"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/baloo_bhai_reg"
+                android:textSize="14sp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="About the Disease"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end">
+
+            <ImageView
+                android:id="@+id/icon_edit_disease"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_edit"
+                android:padding="10dp" />
+
+<!--            <ImageView-->
+<!--                android:id="@+id/icon_delete_disease"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:src="@drawable/ic_delete"-->
+<!--                android:padding="10dp"-->
+<!--                android:layout_marginStart="8dp" />-->
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

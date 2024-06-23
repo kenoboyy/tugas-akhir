@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MenuActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="350dp"
+            android:layout_height="280dp"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="-50dp"
+            android:layout_marginBottom="-45dp"
+            android:src="@drawable/logo_no_background"
+            android:alpha="0.8"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/baloo_bhai_medium"
+            android:text="Skin Detection"
+            android:textColor="@color/theme_txt"
+            android:textSize="38sp"/>
+
+        <TextView
+            android:id="@+id/howCanIHelpYou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="Hey, How can i help you?"
+            android:textColor="#888888"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/howCanIHelpYou">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <!--Tombol Detect Your Skin-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginHorizontal="10dp">
+
+                    <ImageButton
+                        android:id="@+id/detectSkinBtn"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/detect_skin_btn" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="-20dp"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/baloo_bhai_medium"
+                        android:text="Detect Your Skin"
+                        android:textColor="@color/theme_txt" />
+
+                </LinearLayout>
+
+                <!--Tombol Artikel-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginHorizontal="10dp">
+
+                    <ImageButton
+                        android:id="@+id/articleBtn"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/article_btn"
+                        android:contentDescription="route to article" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="-20dp"
+                        android:textSize="16sp"
+
+                        android:fontFamily="@font/baloo_bhai_medium"
+                        android:text="Article"
+                        android:textColor="@color/theme_txt" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/loginadmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="20dp"
+        android:fontFamily="@font/baloo_bhai_medium"
+        android:text="Sign in as Admin"
+        android:textColor="@color/theme_txt"
+        android:textSize="18sp" />
+
+
+
+</RelativeLayout>
